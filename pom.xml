@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Cat</groupId>
+	<artifactId>Cat</artifactId>
+	<version>DSKA_1.0.0</version>
+	<packaging>pom</packaging>
+	<name>Cat</name>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>Cat_bean</groupId>
+				<artifactId>Cat_bean</artifactId>
+				<version>DSKA_1.0.0</version>
+				<type>jar</type>
+			</dependency>
+			<dependency>
+				<groupId>Cat_web</groupId>
+				<artifactId>Cat_web</artifactId>
+				<version>DSKA_1.0.0</version>
+				<type>war</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	 <modules>
+	    <module>Cat_bean</module>
+		<module>Cat_web</module>
+		<module>Cat_ear</module>
+	</modules>
+</project>
